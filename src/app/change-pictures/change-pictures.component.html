@@ -1,3 +1,27 @@
-<p>
-  change-pictures works!
-</p>
+<div class="nav">
+  <div>
+    
+  </div>
+  <h1>Change Pictures</h1>
+  <div>
+    <button class="button" (click)="saveChanges()">Done</button>
+  </div>
+</div>
+
+<div class="section">
+  <h2 class="heading">Profile Pictures</h2>
+  <div class="tile-list">
+    <button class="tile-button" *ngFor="let option of avatarOptions" (click)="changeProfilePicture(option)" [class.active]="profile.avatarUrl === baseUrl + option">
+      <img src="{{baseUrl + option}}">
+    </button>
+  </div>
+</div>
+
+<div class="section">
+  <h2 class="heading">Cover Pictures</h2>
+  <div class="tile-list">
+    <button class="tile-button" *ngFor="let option of coverOptions" (click)="changeCoverPicture(option)" [class.active]="profile.coverUrl === baseUrl + option">
+      <img src="{{baseUrl + option}}">
+    </button>
+  </div>
+</div>

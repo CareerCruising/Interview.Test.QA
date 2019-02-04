@@ -4,8 +4,8 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ProfileService {
-  avatarUrl = '../../assets/images/avatar-3.png';
-  coverUrl = '../../assets/images/cover-3.png';
+  avatarUrl = '../../assets/images/avatar-1.png';
+  coverUrl = '../../assets/images/cover-1.png';
 
   constructor() { }
 }
