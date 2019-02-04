@@ -23,7 +23,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss",
+              "src/normalize.scss"
             ],
             "scripts": []
           },
@@ -72,7 +73,8 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
-              "src/styles.css"
+              "src/styles.scss",
+              "src/normalize.scss"
             ],
             "scripts": [],
             "assets": [
@@ -123,5 +125,10 @@
       }
     }
   },
-  "defaultProject": "interview-test-qa"
+  "defaultProject": "interview-test-qa",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }
