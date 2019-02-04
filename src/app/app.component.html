@@ -1,1 +1,20 @@
+<div class="main-menu">
+    <div>
+        Xello
+    </div>
+    <div class="nav-links">
+        <a [routerLink]="'about-me'" [routerLinkActive]="'active'" class="nav-link">
+            About Me
+        </a>
+        <a [routerLink]="'careers'" class="nav-link">
+            Careers
+        </a>
+        <a [routerLink]="'my-goals'" [routerLinkActive]="'active'" class="nav-link">
+            My Goals
+        </a>
+    </div>
+    <div class="profile-pic">
+        <img src="{{profile.avatarUrl}}" />
+    </div>
+</div>
 <router-outlet></router-outlet>

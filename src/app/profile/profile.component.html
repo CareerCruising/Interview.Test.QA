@@ -1,29 +1,10 @@
-<div class="main-menu">
-  <div>
-    Xello
-  </div>
-  <div class="nav-links">
-    <div class="nav-link active">
-      About Me
-    </div>
-    <div class="nav-link">
-      Careers
-    </div>
-    <div class="nav-link">
-      My Goals
-    </div>
-  </div>
-  <div>
-
-  </div>
-</div>
-
-<div class="jumbotron">
+<div class="jumbotron" [ngStyle]="{'background-image': 'url('+profile.coverUrl+')'}">
   <button class="button" (click)="changePictures()">Change Pictures</button>
 </div>
 
 <div class="header-wrapper">
   <div class="profile-pic">
+    <img src="{{profile.avatarUrl}}" />
   </div>
   <div class="header-elements">
     <h1>

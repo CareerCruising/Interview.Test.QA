@@ -8,12 +8,14 @@ import { ProfileComponent } from './profile/profile.component';
 import { ChangePicturesComponent } from './change-pictures/change-pictures.component';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
+import { UnderConstructionComponent } from './under-construction/under-construction.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProfileComponent,
-    ChangePicturesComponent
+    ChangePicturesComponent,
+    UnderConstructionComponent
   ],
   imports: [
     CommonModule,
