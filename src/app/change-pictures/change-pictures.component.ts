@@ -15,21 +15,25 @@ export class ChangePicturesComponent implements OnInit {
   constructor(public profile: ProfileService, private router: Router) { }
 
   ngOnInit() {
-    this.currentAvatar = this.profile.avatarOptions.findIndex(x => this.profile.avatarUrl.indexOf(x) !== -1);
+    this.currentAvatar = Math.max(0, this.profile.avatarOptions.findIndex(x => this.profile.avatarUrl === x));
   }
 
-  saveChanges() {
+  close() {
     this.router.navigate(['about-me']);
   }
 
-  changeProfilePicture(option: string) {
-    this.profile.avatarUrl = option;
-    this.currentAvatar = this.profile.avatarOptions.findIndex(x => this.profile.coverUrl.indexOf(x) !== -1);
+  saveChanges() {
+    this.profile.avatarUrl = this.profile.avatarOptions[this.currentAvatar];
+    this.profile.coverUrl = this.profile.coverOptions[this.currentCover];
+    this.router.navigate(['about-me']);
   }
 
-  changeCoverPicture(option: string) {
-    this.profile.coverUrl = option;
-    this.currentCover = this.profile.coverOptions.findIndex(x => this.profile.coverUrl.indexOf(x) !== -1);
+  changeProfilePicture(option: number) {
+    this.currentAvatar = option;
+  }
+
+  changeCoverPicture(option: number) {
+    this.currentCover = option;
   }
 
 }

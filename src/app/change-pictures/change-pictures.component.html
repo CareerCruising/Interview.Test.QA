@@ -1,22 +1,19 @@
 <div class="nav">
   <div>
-    
+    <div (click)="close()">Cancel</div>
   </div>
-  <h1>Change Pictures</h1>
+  <h1>Change pictures</h1>
   <div>
-    <button class="button" (click)="saveChanges()">Done</button>
+    <button class="button" (click)="saveChanges()">Save</button>
   </div>
 </div>
-
-Avatar: {{currentAvatar}}
-Cover: {{currentCover}}
 
 <div class="section">
   <h2 class="heading">Profile Pictures</h2>
   <div class="tile-list">
     <button class="tile-button"
         *ngFor="let option of profile.avatarOptions; let i = index"
-        (click)="changeProfilePicture(option)"
+        (click)="changeProfilePicture(i)"
         [class.active]="i === currentAvatar">
       <img src="{{profile.baseUrl + option}}">
     </button>
@@ -24,11 +21,11 @@ Cover: {{currentCover}}
 </div>
 
 <div class="section">
-  <h2 class="heading">Cover Pictrues</h2>
+  <h2 class="heading">Cover Pictures</h2>
   <div class="tile-list">
     <button class="tile-button"
         *ngFor="let option of profile.coverOptions; let i = index"
-        (click)="changeCoverPicture(option)"
+        (click)="changeCoverPicture(i)"
         [class.active]="i === currentCover">
       <img src="{{profile.baseUrl + option}}">
     </button>
