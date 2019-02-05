@@ -11,7 +11,7 @@ Angular needs Node.js. Go to nodejs.org and download the latest version of Node.
 ## Angular CLI
 
 To install the Angular CLI version 6.1.1, open the command prompt. Navigate to where the code is located. For example if you downloaded the code to C:\workspace\Interview.Test.QA, type cd C:\workspace\Interview.Test.QA
-next run the command npm install -g @angular/cli@6.1.1
+next run the command npm install @angular/cli@6.1.1
 
 ## Running the site locally
 In the same command window run the command 
