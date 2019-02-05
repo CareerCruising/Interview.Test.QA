@@ -1,11 +1,11 @@
-<div class="jumbotron" [ngStyle]="{'background-image': 'url('+profile.coverUrl+')'}">
+<div class="jumbotron" [ngStyle]="{'background-image': 'url('+profile.baseUrl+(profile.coverUrl||profile.coverOptions[0])+')'}">
   <div class="button" (click)="changePictures()">Change Pictures</div>
   <div class="shadow"></div>
 </div>
 
 <div class="header-wrapper">
   <div class="profile-pic">
-    <img src="{{profile.avatarUrl}}" />
+    <img src="{{profile.baseUrl+(profile.avatarUrl||profile.avatarOptions[0])}}" />
   </div>
   <div class="header-elements">
     <h1>

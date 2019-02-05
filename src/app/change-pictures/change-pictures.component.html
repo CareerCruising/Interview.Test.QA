@@ -15,10 +15,10 @@ Cover: {{currentCover}}
   <h2 class="heading">Profile Pictures</h2>
   <div class="tile-list">
     <button class="tile-button"
-        *ngFor="let option of avatarOptions; let i = index"
+        *ngFor="let option of profile.avatarOptions; let i = index"
         (click)="changeProfilePicture(option)"
         [class.active]="i === currentAvatar">
-      <img src="{{baseUrl + option}}">
+      <img src="{{profile.baseUrl + option}}">
     </button>
   </div>
 </div>
@@ -27,10 +27,10 @@ Cover: {{currentCover}}
   <h2 class="heading">Cover Pictrues</h2>
   <div class="tile-list">
     <button class="tile-button"
-        *ngFor="let option of coverOptions; let i = index"
+        *ngFor="let option of profile.coverOptions; let i = index"
         (click)="changeCoverPicture(option)"
         [class.active]="i === currentCover">
-      <img src="{{baseUrl + option}}">
+      <img src="{{profile.baseUrl + option}}">
     </button>
   </div>
 </div>
