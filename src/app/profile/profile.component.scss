@@ -16,6 +16,16 @@
     }
 }
 
+.shadow {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 135px;
+    background: linear-gradient(to bottom, transparent, rgba(black, 0.35));
+    z-index: 1;
+}
+
 .header-wrapper {
     display: grid;
     grid-template-columns: auto 1fr;

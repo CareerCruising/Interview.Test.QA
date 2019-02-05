@@ -8,19 +8,28 @@
   </div>
 </div>
 
+Avatar: {{currentAvatar}}
+Cover: {{currentCover}}
+
 <div class="section">
   <h2 class="heading">Profile Pictures</h2>
   <div class="tile-list">
-    <button class="tile-button" *ngFor="let option of avatarOptions" (click)="changeProfilePicture(option)" [class.active]="profile.avatarUrl === baseUrl + option">
+    <button class="tile-button"
+        *ngFor="let option of avatarOptions; let i = index"
+        (click)="changeProfilePicture(option)"
+        [class.active]="i === currentAvatar">
       <img src="{{baseUrl + option}}">
     </button>
   </div>
 </div>
 
 <div class="section">
-  <h2 class="heading">Cover Pictures</h2>
+  <h2 class="heading">Cover Pictrues</h2>
   <div class="tile-list">
-    <button class="tile-button" *ngFor="let option of coverOptions" (click)="changeCoverPicture(option)" [class.active]="profile.coverUrl === baseUrl + option">
+    <button class="tile-button"
+        *ngFor="let option of coverOptions; let i = index"
+        (click)="changeCoverPicture(option)"
+        [class.active]="i === currentCover">
       <img src="{{baseUrl + option}}">
     </button>
   </div>
