@@ -1,3 +1,3 @@
 # QA Interview Scripts
 
-Your autmated scripts go here
+Your automated scripts go here
