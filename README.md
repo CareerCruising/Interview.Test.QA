@@ -10,13 +10,20 @@ Angular needs Node.js. Go to nodejs.org and download the latest version of Node.
 
 ## Angular CLI
 
-To install the Angular CLI version 6.1.1, open the command prompt. Navigate to where the code is located. For example if you downloaded the code to C:\workspace\Interview.Test.QA, type cd C:\workspace\Interview.Test.QA
-next run the command npm install @angular/cli@6.1.1
+To install the Angular CLI version 6.1.1, open the command prompt. Navigate to where the code is located. For example if you downloaded the code to C:\workspace\Interview.Test.QA, type:
+
+cd C:\workspace\Interview.Test.QA
+
+Next, install Angular as a dev dependency on the project:
+
+npm install --save-dev @angular/cli@6.1.1
 
 ## Running the site locally
-In the same command window run the command 
+In the same command window run the command:
+
 ng serve --open
-The website will launch in your deafault browser with the url http://localhost:4200/
+
+The website will launch in your default browser with the url http://localhost:4200/
 
 ## Instructions for QA Automation Engineer
 We are building a user profile section which will be a part of the larger web application. We currently only support the Google Chrome browser. The Product Owner has created a few user stories for the developer to follow when creating a couple of screens for the user profile section.
