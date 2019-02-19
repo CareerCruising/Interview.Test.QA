@@ -4,9 +4,12 @@
 /dist
 /tmp
 /out-tsc
+/AutomatedQAScripts/typeScript/
+/AutomatedQAScripts/reports/
 
 # dependencies
 /node_modules
+/AutomatedQAScripts/node_modules
 
 # IDEs and editors
 /.idea
