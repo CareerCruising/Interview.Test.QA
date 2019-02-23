@@ -12,9 +12,9 @@ suite("Home page validation",function(){
         assert.equal(browser.getUrl(),'http://localhost:4200/about-me')
     })
 
-    test.skip("Verify that home page title is 'About me'", function(){
+    test("Verify that home page title is 'About me'", function(){
         //The page title is not About me
-        assert.equal(browser.getTitle(),"About me")
+        assert.equal(browser.getTitle(),"About me", "The title of the page is incorrect")
     })
     
     test("Verify user is redirected to AbouMe page when clicked on About Me in Nav bar", function(){
@@ -26,14 +26,15 @@ suite("Home page validation",function(){
         assert.include(aboutMePage.profilePicture.getAttribute('src'), 'avatar-1')
     })
 
-    test.skip("Verify a default background image is displayed", function() {
+    test("Verify the default background image is displayed", function() {
         //This is a defect as currently there is no default background 
-        assert.include(aboutMePage.backgroundImage.getAttribute('url'), 'cover-1')
+        assert.include(aboutMePage.backgroundImage.getAttribute('url'), 'cover-1', "Incorrect default cover displayed")
     })
 
     test("Clicking on Change picture buttons redirects to Edit profile page", function() {
+        //There is an amiguity in the requirement, this test is assuming the user is redirected to 
+        //change pictures page
         aboutMePage.clickChangePicture()
-        changePicPage.hasLoaded()
-        assert.include(browser.getUrl(), 'change-pictures') //The name of the page should be 'Edit profile
+        changePicPage.hasLoaded() 
     })
 })
