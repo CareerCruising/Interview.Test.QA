@@ -1,0 +1,23 @@
+{
+  "name": "automatedqascripts",
+  "version": "1.0.0",
+  "description": "Xello automation",
+  "main": "index.js",
+  "scripts": {
+    "test": "wdio"
+  },
+  "author": "Rahul",
+  "license": "ISC",
+  "devDependencies": {
+    "wdio": "^3.0.0",
+    "wdio-chromedriver-service": "^5.0.1",
+    "wdio-dot-reporter": "0.0.10",
+    "wdio-mocha-framework": "^0.6.4",
+    "wdio-selenium-standalone-service": "0.0.12",
+    "wdio-spec-reporter": "^0.1.5",
+    "webdriverio": "^4.13.2"
+  },
+  "dependencies": {
+    "chai": "^4.2.0"
+  }
+}
