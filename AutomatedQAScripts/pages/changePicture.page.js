@@ -5,14 +5,12 @@ let avatarName, coverName
 class ChangePicture {
 
     get changePictureContainer()        {return $('app-change-pictures')}
-    get avatar()                        { return $(`.tile-button img[src*="${avatarName}"]`) }
+    get avatar()                        {return $(`.tile-button img[src*="${avatarName}"]`) }
     get cover()                         {return $(`img[src*="${coverName}"]`)}
-    
-    //get avatar1()                   {return $('.tile-button img[src*="avatar-1"]')}
-    //get cover1()                    {return $('img[src*="cover-1"]')}
-    get saveButton()                {return $('div .button')}
-    get cancelButton()              {return $('//div[contains(text(),"Cancel")]')}    
-    get pictureSections()           { return $$('app-change-pictures .tile-list')} 
+
+    get saveButton()                    {return $('div .button')}
+    get cancelButton()                  {return $('//div[contains(text(),"Cancel")]')}    
+    get pictureSections()               {return $$('app-change-pictures .tile-list')} 
 
     hasLoaded() {
         this.changePictureContainer.waitForVisible()
