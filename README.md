@@ -33,7 +33,7 @@ The Product Owner has created the requirements below for the developer to create
 
 You are required to create a set of automated tests using a framework of your choice based on the requirements listed below.  
 There are defects as well as requirements that were possibly missed by the developer. You are free to use any defect template of your choice to log any defects you find. We will be evaluating the way your tests are written for cleanliness and reuse.
-We expect the task to take no more than 2 hours to complete, however you are not required to stick to this limit.
+We expect the task to take no more than few hours to complete, however you are not required to stick to this limit.
 
 ### UI Requirements sent to Developer
 The UI Requirements that were sent to the developer are located in the sub folder Reqirements. You can also reach it via the link below: https://github.com/CareerCruising/Interview.Test.QA/blob/master/Requirements/Requirements%20for%20Developer%20-%20%20QA%20Automation%20Test.pdf
