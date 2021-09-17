@@ -40,6 +40,6 @@ The UI Requirements that were sent to the developer are located in the sub folde
 * Assuming you have successfully set up the front end repository which you will use to write E2E tests:
 * Set yourself up with the automation framework of your choice. (We are using Cypress for our E2E testing)
 * Add a folder with your name under AutomatedQAScripts, and that will be your working space during the interview.
-* You are free to set up the structure of test suite under "AutomatedQAScripts" before coming to the interview process.
-* During interview process you will be asked to write an E2E test for a specific scenario.
-* At the end of invterview, you should create a branch in Github and push your changes to Github.
+* You are free to set up the structure of the test suite under "AutomatedQAScripts" before coming to the interview discussion.
+* During the discussion, you will be asked to write an E2E test for a specific scenario.
+* At the end of discussion, you should create a branch in Github and push your changes to Github.
