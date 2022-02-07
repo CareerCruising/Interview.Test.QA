@@ -4,6 +4,15 @@ We are assuming you are familar with github. If you need help with running the w
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.1.
 
+## Code Owner(s):
+In case of questions about this codebase, contact: 
+@Andre Rajfura 
+@Fahad Daryaee
+
+> Code owner is someone that understands the codebase and able to on-board others on it. Code owners are expected to take responsibility for the repository and keep an eye on changes made by other people. If you want to make a substantial change to a repository it's polite to talk it over with the code owner first. Code owners are not responsible for making the changes to the repository.
+
+see ""Weak code ownership"" https://martinfowler.com/bliki/CodeOwnership.html"
+
 ## Local Node Environment
 
 Angular needs Node.js. Go to nodejs.org and download the latest version of Node.js
