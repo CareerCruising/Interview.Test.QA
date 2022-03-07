@@ -25,15 +25,6 @@ npm start
 
 The website will launch in your default browser with the url http://localhost:4200/
 
-## Instructions for QA Automation Engineer
-We are building a user profile section which will be a part of the larger web application. We currently only support the Google Chrome browser. The Product Owner has created a few user stories for the developer to follow when creating a couple of screens for the user profile section.
-
-### QA Automation Guidelines
-The Product Owner has created the requirements below for the developer to create a User Interface containing 2 screens and tasked the QA automation engineer with validating the finished product.
-
-
-### UI Requirements sent to Developer
-The UI Requirements that were sent to the developer are located in the sub folder Reqirements. You can also reach it via the link below: https://github.com/CareerCruising/Interview.Test.QA/blob/master/Requirements/Requirements%20for%20Developer%20-%20%20QA%20Automation%20Test.pdf
 
 ### What you need to do:
 * Fork this repo
